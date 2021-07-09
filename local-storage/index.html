@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SLT World - Local Storage</title>
+  <link rel="stylesheet" href="../scripts/font-awesome.min.css" />
+  <link rel="stylesheet" href="../scripts/bootstrap.min.css" />
+  <link rel="stylesheet" href="../scripts/style.css" />
+  <script src="../scripts/removeBanner.js"></script>
+  <meta name="copyrighted-site-verification" content="08295906475c5162" />
+  
+    <style>
+        .copyrighted-badge {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <a class="copyrighted-badge" title="Copyrighted.com Registered &amp; Protected" target="_blank" href="https://www.copyrighted.com/website/0aUVqhhFlUlAU8lS"><img alt="Copyrighted.com Registered &amp; Protected" border="0" width="125" height="25" srcset="https://static.copyrighted.com/badges/125x25/01_1_2x.png 2x" src="https://static.copyrighted.com/badges/125x25/01_1.png" /></a><script src="https://static.copyrighted.com/badges/helper.js"></script>
+    <nav>
+		<div class="hamburger">
+			<div class="line"></div>
+			<div class="line"></div>
+			<div class="line"></div>
+		</div>
+		<ul class="nav-links">
+			<li><a href="../">Home</a></li>
+			<li><a href="../about/">About</a></li>
+		    <li><a href="../team/">Team</a></li>
+		    <li><a href="../projects/">Projects</a></li>
+		    <li><a href="../products/">Products</a></li>
+		    <form class="form-inline">
+              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"
+                id="searchtextbox" />
+            </form>
+		</ul>
+	</nav>
+  <section class="todo-outer">
+    <div class="container">
+      <div class="row justify-content-md-center">
+        <div class="col-sm-12 col-md-8">
+          <h1>Local Storage</h1>
+          <div class="todo-inner">
+            <div class="form-row">
+              <div class="col-8 mr-sm-2">
+                <input type="text" class="form-control" placeholder="Enter storage" id="addtaskinput" />
+                <input type="hidden" id="saveindex">
+              </div>
+              <button type="button" class="btn btn-success mr-sm-2" id="addtaskbtn">
+                Add
+              </button>
+              <button type="button" class="btn btn-success mr-sm-2" id="savetaskbtn" style="display: none;">
+                Save
+              </button>
+              <button type="button" id="deleteallbtn" class="btn btn-danger">
+                Delete All
+              </button>
+            </div>
+            <div class="to-do-output">
+              <table class="table table-striped mt-3 mb-0" id="addedtasklist">
+                
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="../scripts/app.js"></script>
+</body>
+
+</html>
